@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "f703422b-6ea9-432b-8022-2faa9faaa5da",
+		"name": "cmdb-cmdb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "usage",
+			"item": [
+				{
+					"name": "查询月份列表",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8010/v1/usage/report/months/?auth_key=xxxxxxx",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8010",
+							"path": [
+								"v1",
+								"usage",
+								"report",
+								"months",
+								""
+							],
+							"query": [
+								{
+									"key": "auth_key",
+									"value": "xxxxxxx"
+								}
+							]
+						},
+						"description": "查询月份列表"
+					},
+					"response": []
+				},
+				{
+					"name": "查询资源使用率月报",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询主机月份资源详单",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8010/v1/usage/resource/?auth_key=xxxxxxx",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8010",
+							"path": [
+								"v1",
+								"usage",
+								"resource",
+								""
+							],
+							"query": [
+								{
+									"key": "auth_key",
+									"value": "xxxxxxx"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9ec14e9d-c7ff-453b-8803-7648d7523e65",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3546dec5-df86-4137-91db-9e3b7e3b28cf",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

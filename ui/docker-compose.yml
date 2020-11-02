@@ -1,0 +1,9 @@
+cmdb:
+  restart: unless-stopped
+  image: cmdb_image
+  volumes:
+    - /var/log/nginx/:/var/log/nginx/
+    - /sys/fs/cgroup:/sys/fs/cgroup
+  ports:
+    - "80:80"
+    - "443:443"
